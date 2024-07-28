@@ -93,3 +93,35 @@ void loop()
     
     delay(1000);
 }
+
+```
+## Implementation
+
+The main code for the ESP32 is as follows:
+
+## Usage
+
+Upload the code to your ESP32 board.
+Open the Serial Monitor to view the training process and predictions.
+Press the buttons in different combinations to see how the perceptrons respond:
+
+(0, 0): Neither button pressed
+(0, 1): Only Button 2 pressed
+(1, 0): Only Button 1 pressed
+(1, 1): Both buttons pressed
+
+## Results
+The perceptrons will make predictions based on the button inputs:
+
+## Binary Perceptron:
+
+LED on for positive classification (1)
+LED off for negative classification (0)
+
+
+## Continuous Perceptron:
+
+LED on for predictions > 0.5
+LED off for predictions <= 0.5
+
+Observe how the LEDs respond to different button combinations to see the perceptrons in action!
